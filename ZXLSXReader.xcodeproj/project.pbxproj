@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8818BE161D6DACE9006A1353 /* ZBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818BE151D6DACE9006A1353 /* ZBaseParser.m */; };
+		8818BE1B1D6DB9CD006A1353 /* ZSheetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818BE1A1D6DB9CD006A1353 /* ZSheetParser.m */; };
+		8818BE1E1D6DBC16006A1353 /* ZSheetCol.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818BE1D1D6DBC16006A1353 /* ZSheetCol.m */; };
+		8818BE211D6DCA11006A1353 /* ZContentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818BE201D6DCA11006A1353 /* ZContentParser.m */; };
+		8884A79F1D6D8A710055FA11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884A79E1D6D8A710055FA11 /* main.m */; };
+		8884A7A21D6D8A710055FA11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7A11D6D8A710055FA11 /* AppDelegate.m */; };
+		8884A7A51D6D8A710055FA11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7A41D6D8A710055FA11 /* ViewController.m */; };
+		8884A7A81D6D8A710055FA11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8884A7A61D6D8A710055FA11 /* Main.storyboard */; };
+		8884A7AA1D6D8A710055FA11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8884A7A91D6D8A710055FA11 /* Assets.xcassets */; };
+		8884A7AD1D6D8A710055FA11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8884A7AB1D6D8A710055FA11 /* LaunchScreen.storyboard */; };
+		8884A7E71D6D8C440055FA11 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8884A7E61D6D8C440055FA11 /* libz.tbd */; };
+		8884A80F1D6D8F300055FA11 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7EF1D6D8F300055FA11 /* aescrypt.c */; };
+		8884A8101D6D8F300055FA11 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7F01D6D8F300055FA11 /* aeskey.c */; };
+		8884A8111D6D8F300055FA11 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7F21D6D8F300055FA11 /* aestab.c */; };
+		8884A8121D6D8F300055FA11 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7F61D6D8F300055FA11 /* entropy.c */; };
+		8884A8131D6D8F300055FA11 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7F81D6D8F300055FA11 /* fileenc.c */; };
+		8884A8141D6D8F300055FA11 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7FA1D6D8F300055FA11 /* hmac.c */; };
+		8884A8151D6D8F300055FA11 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7FC1D6D8F300055FA11 /* prng.c */; };
+		8884A8161D6D8F300055FA11 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A7FE1D6D8F300055FA11 /* pwd2key.c */; };
+		8884A8171D6D8F300055FA11 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A8001D6D8F300055FA11 /* sha1.c */; };
+		8884A8181D6D8F300055FA11 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A8051D6D8F300055FA11 /* ioapi.c */; };
+		8884A8191D6D8F300055FA11 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A8071D6D8F300055FA11 /* mztools.c */; };
+		8884A81A1D6D8F300055FA11 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A8091D6D8F300055FA11 /* unzip.c */; };
+		8884A81B1D6D8F300055FA11 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8884A80B1D6D8F300055FA11 /* zip.c */; };
+		8884A81C1D6D8F300055FA11 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884A80E1D6D8F300055FA11 /* SSZipArchive.m */; };
+		8884A81F1D6D8FA50055FA11 /* ZXLSXParsers注解.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884A81E1D6D8FA50055FA11 /* ZXLSXParsers注解.m */; };
+		8884A8221D6D914D0055FA11 /* ZXLSXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884A8211D6D914D0055FA11 /* ZXLSXParser.m */; };
+		8884A8281D6D99850055FA11 /* ZWorkbookParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884A8271D6D99850055FA11 /* ZWorkbookParser.m */; };
+		8884A82C1D6D99C60055FA11 /* ZSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8884A82B1D6D99C60055FA11 /* ZSheet.m */; };
+		88EEAC691D6E6FA700270D76 /* ZContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EEAC681D6E6FA700270D76 /* ZContent.m */; };
+		88EEAD931D6EE7F500270D76 /* mydemo.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = 88EEAD921D6EE7F500270D76 /* mydemo.xlsx */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8818BE141D6DACE9006A1353 /* ZBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBaseParser.h; sourceTree = "<group>"; };
+		8818BE151D6DACE9006A1353 /* ZBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBaseParser.m; sourceTree = "<group>"; };
+		8818BE171D6DAD69006A1353 /* ZPaserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPaserProtocol.h; path = models/ZPaserProtocol.h; sourceTree = "<group>"; };
+		8818BE181D6DB724006A1353 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		8818BE191D6DB9CD006A1353 /* ZSheetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSheetParser.h; sourceTree = "<group>"; };
+		8818BE1A1D6DB9CD006A1353 /* ZSheetParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSheetParser.m; sourceTree = "<group>"; };
+		8818BE1C1D6DBC16006A1353 /* ZSheetCol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSheetCol.h; sourceTree = "<group>"; };
+		8818BE1D1D6DBC16006A1353 /* ZSheetCol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSheetCol.m; sourceTree = "<group>"; };
+		8818BE1F1D6DCA11006A1353 /* ZContentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZContentParser.h; sourceTree = "<group>"; };
+		8818BE201D6DCA11006A1353 /* ZContentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZContentParser.m; sourceTree = "<group>"; };
+		8884A79A1D6D8A710055FA11 /* ZXLSXReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXLSXReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8884A79E1D6D8A710055FA11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8884A7A01D6D8A710055FA11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8884A7A11D6D8A710055FA11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8884A7A31D6D8A710055FA11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8884A7A41D6D8A710055FA11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8884A7A71D6D8A710055FA11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8884A7A91D6D8A710055FA11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8884A7AC1D6D8A710055FA11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8884A7AE1D6D8A710055FA11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8884A7E61D6D8C440055FA11 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8884A7ED1D6D8F300055FA11 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		8884A7EE1D6D8F300055FA11 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		8884A7EF1D6D8F300055FA11 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		8884A7F01D6D8F300055FA11 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		8884A7F11D6D8F300055FA11 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		8884A7F21D6D8F300055FA11 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		8884A7F31D6D8F300055FA11 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		8884A7F41D6D8F300055FA11 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		8884A7F51D6D8F300055FA11 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		8884A7F61D6D8F300055FA11 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		8884A7F71D6D8F300055FA11 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		8884A7F81D6D8F300055FA11 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		8884A7F91D6D8F300055FA11 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		8884A7FA1D6D8F300055FA11 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		8884A7FB1D6D8F300055FA11 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		8884A7FC1D6D8F300055FA11 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		8884A7FD1D6D8F300055FA11 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		8884A7FE1D6D8F300055FA11 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		8884A7FF1D6D8F300055FA11 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		8884A8001D6D8F300055FA11 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		8884A8011D6D8F300055FA11 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		8884A8021D6D8F300055FA11 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		8884A8041D6D8F300055FA11 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		8884A8051D6D8F300055FA11 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		8884A8061D6D8F300055FA11 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		8884A8071D6D8F300055FA11 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		8884A8081D6D8F300055FA11 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		8884A8091D6D8F300055FA11 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		8884A80A1D6D8F300055FA11 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		8884A80B1D6D8F300055FA11 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		8884A80C1D6D8F300055FA11 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		8884A80D1D6D8F300055FA11 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		8884A80E1D6D8F300055FA11 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		8884A81E1D6D8FA50055FA11 /* ZXLSXParsers注解.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZXLSXParsers注解.m"; sourceTree = "<group>"; };
+		8884A8201D6D914D0055FA11 /* ZXLSXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXLSXParser.h; sourceTree = "<group>"; };
+		8884A8211D6D914D0055FA11 /* ZXLSXParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLSXParser.m; sourceTree = "<group>"; };
+		8884A8261D6D99850055FA11 /* ZWorkbookParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWorkbookParser.h; sourceTree = "<group>"; };
+		8884A8271D6D99850055FA11 /* ZWorkbookParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWorkbookParser.m; sourceTree = "<group>"; };
+		8884A82A1D6D99C60055FA11 /* ZSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSheet.h; sourceTree = "<group>"; };
+		8884A82B1D6D99C60055FA11 /* ZSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSheet.m; sourceTree = "<group>"; };
+		88EEAC671D6E6FA700270D76 /* ZContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZContent.h; sourceTree = "<group>"; };
+		88EEAC681D6E6FA700270D76 /* ZContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZContent.m; sourceTree = "<group>"; };
+		88EEAD921D6EE7F500270D76 /* mydemo.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydemo.xlsx; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8884A7971D6D8A710055FA11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8884A7E71D6D8C440055FA11 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8884A7911D6D8A710055FA11 = {
+			isa = PBXGroup;
+			children = (
+				8884A7E61D6D8C440055FA11 /* libz.tbd */,
+				8884A79C1D6D8A710055FA11 /* ZXLSXReader */,
+				8884A79B1D6D8A710055FA11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8884A79B1D6D8A710055FA11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8884A79A1D6D8A710055FA11 /* ZXLSXReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8884A79C1D6D8A710055FA11 /* ZXLSXReader */ = {
+			isa = PBXGroup;
+			children = (
+				8884A7EA1D6D8F2F0055FA11 /* ZXLSXParser */,
+				8884A7A01D6D8A710055FA11 /* AppDelegate.h */,
+				8884A7A11D6D8A710055FA11 /* AppDelegate.m */,
+				8884A7A31D6D8A710055FA11 /* ViewController.h */,
+				8884A7A41D6D8A710055FA11 /* ViewController.m */,
+				8884A7A61D6D8A710055FA11 /* Main.storyboard */,
+				8884A7A91D6D8A710055FA11 /* Assets.xcassets */,
+				8884A7AB1D6D8A710055FA11 /* LaunchScreen.storyboard */,
+				8884A7AE1D6D8A710055FA11 /* Info.plist */,
+				88EEAD921D6EE7F500270D76 /* mydemo.xlsx */,
+				8884A79D1D6D8A710055FA11 /* Supporting Files */,
+			);
+			path = ZXLSXReader;
+			sourceTree = "<group>";
+		};
+		8884A79D1D6D8A710055FA11 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8884A79E1D6D8A710055FA11 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8884A7EA1D6D8F2F0055FA11 /* ZXLSXParser */ = {
+			isa = PBXGroup;
+			children = (
+				8884A81D1D6D8F550055FA11 /* xmlParser */,
+				8884A7EB1D6D8F300055FA11 /* SSZipArchive */,
+				8884A81E1D6D8FA50055FA11 /* ZXLSXParsers注解.m */,
+			);
+			path = ZXLSXParser;
+			sourceTree = "<group>";
+		};
+		8884A7EB1D6D8F300055FA11 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				8884A7EC1D6D8F300055FA11 /* aes */,
+				8884A8021D6D8F300055FA11 /* Common.h */,
+				8884A8031D6D8F300055FA11 /* minizip */,
+				8884A80D1D6D8F300055FA11 /* SSZipArchive.h */,
+				8884A80E1D6D8F300055FA11 /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		8884A7EC1D6D8F300055FA11 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				8884A7ED1D6D8F300055FA11 /* aes.h */,
+				8884A7EE1D6D8F300055FA11 /* aes_via_ace.h */,
+				8884A7EF1D6D8F300055FA11 /* aescrypt.c */,
+				8884A7F01D6D8F300055FA11 /* aeskey.c */,
+				8884A7F11D6D8F300055FA11 /* aesopt.h */,
+				8884A7F21D6D8F300055FA11 /* aestab.c */,
+				8884A7F31D6D8F300055FA11 /* aestab.h */,
+				8884A7F41D6D8F300055FA11 /* brg_endian.h */,
+				8884A7F51D6D8F300055FA11 /* brg_types.h */,
+				8884A7F61D6D8F300055FA11 /* entropy.c */,
+				8884A7F71D6D8F300055FA11 /* entropy.h */,
+				8884A7F81D6D8F300055FA11 /* fileenc.c */,
+				8884A7F91D6D8F300055FA11 /* fileenc.h */,
+				8884A7FA1D6D8F300055FA11 /* hmac.c */,
+				8884A7FB1D6D8F300055FA11 /* hmac.h */,
+				8884A7FC1D6D8F300055FA11 /* prng.c */,
+				8884A7FD1D6D8F300055FA11 /* prng.h */,
+				8884A7FE1D6D8F300055FA11 /* pwd2key.c */,
+				8884A7FF1D6D8F300055FA11 /* pwd2key.h */,
+				8884A8001D6D8F300055FA11 /* sha1.c */,
+				8884A8011D6D8F300055FA11 /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		8884A8031D6D8F300055FA11 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				8884A8041D6D8F300055FA11 /* crypt.h */,
+				8884A8051D6D8F300055FA11 /* ioapi.c */,
+				8884A8061D6D8F300055FA11 /* ioapi.h */,
+				8884A8071D6D8F300055FA11 /* mztools.c */,
+				8884A8081D6D8F300055FA11 /* mztools.h */,
+				8884A8091D6D8F300055FA11 /* unzip.c */,
+				8884A80A1D6D8F300055FA11 /* unzip.h */,
+				8884A80B1D6D8F300055FA11 /* zip.c */,
+				8884A80C1D6D8F300055FA11 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		8884A81D1D6D8F550055FA11 /* xmlParser */ = {
+			isa = PBXGroup;
+			children = (
+				8884A8291D6D99AF0055FA11 /* models */,
+				8884A8201D6D914D0055FA11 /* ZXLSXParser.h */,
+				8884A8211D6D914D0055FA11 /* ZXLSXParser.m */,
+				8818BE141D6DACE9006A1353 /* ZBaseParser.h */,
+				8818BE151D6DACE9006A1353 /* ZBaseParser.m */,
+				8884A8261D6D99850055FA11 /* ZWorkbookParser.h */,
+				8884A8271D6D99850055FA11 /* ZWorkbookParser.m */,
+				8818BE191D6DB9CD006A1353 /* ZSheetParser.h */,
+				8818BE1A1D6DB9CD006A1353 /* ZSheetParser.m */,
+				8818BE1F1D6DCA11006A1353 /* ZContentParser.h */,
+				8818BE201D6DCA11006A1353 /* ZContentParser.m */,
+				8818BE171D6DAD69006A1353 /* ZPaserProtocol.h */,
+				8818BE181D6DB724006A1353 /* config.h */,
+			);
+			path = xmlParser;
+			sourceTree = "<group>";
+		};
+		8884A8291D6D99AF0055FA11 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8884A82A1D6D99C60055FA11 /* ZSheet.h */,
+				8884A82B1D6D99C60055FA11 /* ZSheet.m */,
+				8818BE1C1D6DBC16006A1353 /* ZSheetCol.h */,
+				8818BE1D1D6DBC16006A1353 /* ZSheetCol.m */,
+				88EEAC671D6E6FA700270D76 /* ZContent.h */,
+				88EEAC681D6E6FA700270D76 /* ZContent.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8884A7991D6D8A710055FA11 /* ZXLSXReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8884A7B11D6D8A710055FA11 /* Build configuration list for PBXNativeTarget "ZXLSXReader" */;
+			buildPhases = (
+				8884A7961D6D8A710055FA11 /* Sources */,
+				8884A7971D6D8A710055FA11 /* Frameworks */,
+				8884A7981D6D8A710055FA11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXLSXReader;
+			productName = ZXLSXReader;
+			productReference = 8884A79A1D6D8A710055FA11 /* ZXLSXReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8884A7921D6D8A710055FA11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Z;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = casanova;
+				TargetAttributes = {
+					8884A7991D6D8A710055FA11 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8884A7951D6D8A710055FA11 /* Build configuration list for PBXProject "ZXLSXReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8884A7911D6D8A710055FA11;
+			productRefGroup = 8884A79B1D6D8A710055FA11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8884A7991D6D8A710055FA11 /* ZXLSXReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8884A7981D6D8A710055FA11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8884A7AD1D6D8A710055FA11 /* LaunchScreen.storyboard in Resources */,
+				8884A7AA1D6D8A710055FA11 /* Assets.xcassets in Resources */,
+				8884A7A81D6D8A710055FA11 /* Main.storyboard in Resources */,
+				88EEAD931D6EE7F500270D76 /* mydemo.xlsx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8884A7961D6D8A710055FA11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8884A8171D6D8F300055FA11 /* sha1.c in Sources */,
+				8884A8281D6D99850055FA11 /* ZWorkbookParser.m in Sources */,
+				8884A8181D6D8F300055FA11 /* ioapi.c in Sources */,
+				8818BE1B1D6DB9CD006A1353 /* ZSheetParser.m in Sources */,
+				8884A8151D6D8F300055FA11 /* prng.c in Sources */,
+				8884A82C1D6D99C60055FA11 /* ZSheet.m in Sources */,
+				8884A81C1D6D8F300055FA11 /* SSZipArchive.m in Sources */,
+				8884A8161D6D8F300055FA11 /* pwd2key.c in Sources */,
+				8884A8191D6D8F300055FA11 /* mztools.c in Sources */,
+				8884A8131D6D8F300055FA11 /* fileenc.c in Sources */,
+				8884A81A1D6D8F300055FA11 /* unzip.c in Sources */,
+				8884A7A51D6D8A710055FA11 /* ViewController.m in Sources */,
+				8884A81F1D6D8FA50055FA11 /* ZXLSXParsers注解.m in Sources */,
+				8884A8111D6D8F300055FA11 /* aestab.c in Sources */,
+				88EEAC691D6E6FA700270D76 /* ZContent.m in Sources */,
+				8884A81B1D6D8F300055FA11 /* zip.c in Sources */,
+				8818BE161D6DACE9006A1353 /* ZBaseParser.m in Sources */,
+				8884A7A21D6D8A710055FA11 /* AppDelegate.m in Sources */,
+				8884A80F1D6D8F300055FA11 /* aescrypt.c in Sources */,
+				8818BE211D6DCA11006A1353 /* ZContentParser.m in Sources */,
+				8884A79F1D6D8A710055FA11 /* main.m in Sources */,
+				8884A8221D6D914D0055FA11 /* ZXLSXParser.m in Sources */,
+				8884A8141D6D8F300055FA11 /* hmac.c in Sources */,
+				8884A8101D6D8F300055FA11 /* aeskey.c in Sources */,
+				8884A8121D6D8F300055FA11 /* entropy.c in Sources */,
+				8818BE1E1D6DBC16006A1353 /* ZSheetCol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8884A7A61D6D8A710055FA11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8884A7A71D6D8A710055FA11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8884A7AB1D6D8A710055FA11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8884A7AC1D6D8A710055FA11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8884A7AF1D6D8A710055FA11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8884A7B01D6D8A710055FA11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8884A7B21D6D8A710055FA11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZXLSXReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.casanova.z.ZXLSXReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8884A7B31D6D8A710055FA11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZXLSXReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.casanova.z.ZXLSXReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8884A7951D6D8A710055FA11 /* Build configuration list for PBXProject "ZXLSXReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8884A7AF1D6D8A710055FA11 /* Debug */,
+				8884A7B01D6D8A710055FA11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8884A7B11D6D8A710055FA11 /* Build configuration list for PBXNativeTarget "ZXLSXReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8884A7B21D6D8A710055FA11 /* Debug */,
+				8884A7B31D6D8A710055FA11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8884A7921D6D8A710055FA11 /* Project object */;
+}
