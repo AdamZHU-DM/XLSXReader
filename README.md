@@ -1,1 +1,1 @@
-# --ZXLSXReader 通过对.xlsx解压缩后，对解压后的文件进行解析，得到文件每个单元格的值，并且以不同的形式返回
+# --ZXLSXReader 是在ios平台下，对excel文档（xlsx）的解析
